@@ -1,0 +1,50 @@
+@use "../utilities";
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-link-btn-bg);
+  color: var(--color-link-btn);
+  padding: var(--size-8) var(--size-16);
+
+  &:hover {
+    background-color: var(--color-link-btn-bg-hover);
+  }
+}
+
+.nav-toggle {
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  line-height: initial;
+  padding: var(--size-4);
+  font-size: var(--font-size-2xl);
+  inline-size: 1.875rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+
+  @include utilities.breakpoint(medium) {
+    display: none;
+  }
+}
+
+.nav-toggle__bar {
+  inline-size: 100%;
+  block-size: 0.125rem;
+  background-color: var(--color-black);
+  margin-block: var(--size-4);
+  border-radius: var(--border-radius-full);
+  transform-origin: center;
+  transition: transform 200ms cubic-bezier(.28,.55,.385,1.65);
+}
+
+[data-nav-state="open"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(0.375rem) rotate(45deg);
+}
+
+[data-nav-state="open"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+[data-nav-state="open"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-0.375rem) rotate(-45deg);
+}

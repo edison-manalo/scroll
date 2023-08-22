@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.4.2-web/css/all.min.css" />
+  </head>
+  <body data-nav-state="close">
+
+    <header id="home" class="header">
+      <!-- Navbar -->
+      <nav id="navbar" class="nav">
+        <div class="container nav-center">
+          <!-- Nav header -->
+          <div class="nav-header">
+            <a href="#home" class="logo-link">Code</a>
+            <button type="button" class="nav-toggle">
+              <div class="nav-toggle__bar"></div>
+              <div class="nav-toggle__bar"></div>
+              <div class="nav-toggle__bar"></div>
+            </button>
+          </div>
+
+          <!-- Links -->
+          <div class="links-container">
+            <ul class="links">
+              <li class="links-list"><a href="#home" class="links-item scroll-link">Home</a></li>
+              <li class="links-list"><a href="#about" class="links-item scroll-link">About</a></li>
+              <li class="links-list"><a href="#services" class="links-item scroll-link">Services</a></li>
+              <li class="links-list"><a href="#tours" class="links-item scroll-link">Tours</a></li>
+              <li class="links-list"><a href="#tours" class="links-item btn links-item--btn scroll-link">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>Scroll Project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+            neque sunt in? Id, necessitatibus quos quisquam distinctio
+            laudantium fugiat?
+          </p>
+          <a href="#tours" class="btn banner-scroll-link scroll-link">Explore tours</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- About -->
+      <section id="about" class="container scroll-section">
+        <div class="title"><h2>About <span>us</span></h2></div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="container scroll-section">
+        <div class="title"><h2>Our <span>services</span></h2></div>
+      </section>
+
+      <!-- Contact -->
+      <section id="tours" class="container scroll-section">
+        <div class="title"><h2>Featured <span>tours</span></h2></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-section">
+        <p>
+          Backroads Travel Tours Company
+          <br />
+          &copy; <span id="date"></span> All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <a href="#home" class="scroll-link back-to-top-link"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  inline-size: min(85rem, 100%);
+  margin-inline: auto;
+  padding-inline: var(--size-16);
+}
+
+.header {
+  background-color: var(--color-gray-10);
+}
+
+.banner {
+  padding-block-start: var(--nav-height);
+  min-block-size: 100dvh;
+  display: flex;
+  align-items: center;
+}
+
+.banner-scroll-link {
+  margin-block: var(--size-16);
+}
+
+.scroll-section {
+  min-block-size: 100dvh;
+  padding-block: var(--size-32);
+  scroll-margin-block-start: var(--nav-height);
+}
+
+.back-to-top-link {
+  position: fixed;
+  inset: auto var(--size-16) var(--size-16) auto;
+  background-color: var(--color-link-btn-bg);
+  color: var(--color-link-btn);
+  inline-size: 2.75rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  border-radius: var(--border-radius-full);
+  z-index: var(--z-popover);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 200ms;
+
+  &:hover {
+    background-color: var(--color-primary-darken);
+  }
+
+  &.is-shown {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: initial;
+  }
+}
+
+.footer-section {
+  padding-block: var(--size-16);
+  text-align: center;
+}

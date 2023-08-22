@@ -1,0 +1,19 @@
+{
+  "name": "scroll",
+  "version": "1.0.0",
+  "description": "Scroll JavaScript Project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch styles/scss:styles/css"
+  },
+  "keywords": [
+    "scroll-javascript-project",
+    "scroll",
+    "javascript-project"
+  ],
+  "author": "Edison Manalo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.65.1"
+  }
+}
